@@ -1,25 +1,49 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "git 基本配置和使用"
 date:   2016-04-10 07:56:25 +0800
-categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
 
 {% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+git init
+ls -a
+git status
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+{% highlight ruby %}
+git add README
+git commit -m "1st"
+{% endhighlight %}
+
+
+{% highlight ruby %}
+git config --global user.name "leiu25202520"
+git config --global user.email "leiu2520@126.com"
+git log
+git log -p
+{% endhighlight %}
+
+
+{% highlight ruby %}
+git commit -a
+git diff
+{% endhighlight %}
+
+
+{% highlight ruby %}
+git config --global core.editor vim
+git commit -a -v
+git config --global alias.ci "commit -a -v"
+{% endhighlight %}
+
+
+{% highlight ruby %}
+[alias]
+    ci = commit -a -v
+{% endhighlight %}
+
+Check out the [参考地址][video-link]
+
+[video-link]: http://haoduoshipin.com/v/4
