@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "git 如何解决 push 更改到 GitHub 却被拒绝的问题"
+date:   2016-04-12 16:48:25 +0800
+---
+
+从远程下载项目 某个分支
+{% highlight ruby %}
+git remote add peter https://github.com/***/***.git
+
+git pull peter gh-pages
+{% endhighlight %}
+
+
+
+Check out the [参考地址][video-link]
+
+[video-link]: http://haoduoshipin.com/v/12
