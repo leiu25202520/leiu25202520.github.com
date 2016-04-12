@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "git 如何解决 push 更改到 GitHub 却被拒绝的问题"
+date:   2016-04-10 07:56:25 +0800
+---
+
+
+{% highlight ruby %}
+#不冲突
+vim .git/config
+vim .git/refs/remote/origin/master
+git fetch origin
+git rebase origin/master
+git push
+{% endhighlight %}
+
+
+{% highlight ruby %}
+＃冲突文件 先拉下来，然后 修改冲突
+git fetch origin
+git add .
+git rebase --continue
+git push
+{% endhighlight %}
+
+
+
+Check out the [参考地址][video-link]
+
+[video-link]: http://haoduoshipin.com/v/10

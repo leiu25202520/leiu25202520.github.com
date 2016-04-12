@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "Git 工作流"
+date:   2016-04-10 07:56:25 +0800
+---
+
+{% highlight ruby %}
+[alias]
+    ci = commit -a -v
+    throw = reset --hard HEAD
+    throwh = reset --hard HEAD^
+{% endhighlight %}
+
+
+{% highlight ruby %}
+git add .
+git ci
+git diff
+git throw
+git throwh
+{% endhighlight %}
+
+
+{% highlight ruby %}
+git ci
+git checkout hello.h
+{% endhighlight %}
+
+
+{% highlight ruby %}
+git stash
+#work on sth else and commit it
+git stash apply
+{% endhighlight %}
+
+
+{% highlight ruby %}
+git checkout -b tmp
+git checkout master
+git branch -D tmp
+git checkout fe544a -b tmp
+{% endhighlight %}
+
+
+Check out the [参考地址][video-link]
+
+[video-link]: http://haoduoshipin.com/v/5
